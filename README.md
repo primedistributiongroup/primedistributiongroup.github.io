@@ -42,6 +42,9 @@
         h1, h2 {
             color: #001f3f;
         }
+        #title {
+            color: white;
+        }
         footer {
             text-align: center;
             padding: 10px;
@@ -114,7 +117,7 @@
             <h2 id="payment-title"></h2>
             <p id="payment-desc"></p>
         </section>
-        <img src="containers_airplane.jpg" alt="Shipping containers and airplane" class="banner-image">
+        <img src="containers_airplane.png" alt="Shipping containers and airplane" class="banner-image">
     </main>
     <footer>
         <div class="contact-info">
