@@ -114,7 +114,7 @@
             <h2 id="payment-title"></h2>
             <p id="payment-desc"></p>
         </section>
-        <img src="containers_airplane.jpng" alt="Shipping containers and airplane" class="banner-image">
+        <img src="containers_airplane.jpg" alt="Shipping containers and airplane" class="banner-image">
     </main>
     <footer>
         <div class="contact-info">
