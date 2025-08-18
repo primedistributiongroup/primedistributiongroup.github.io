@@ -16,7 +16,7 @@
             background-color: #001f3f;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 10px;
             position: relative;
         }
         header img {
@@ -128,7 +128,6 @@
     <script>
         const translations = {
             pl: {
-                title: "Prime Distribution Group",
                 aboutTitle: "O nas",
                 desc1: "Prime Distribution Group to nowoczesna hurtownia internetowa o niezwykle szerokim wyborze asortymentu. W naszej ofercie znajdują się m.in. akcesoria elektroniczne, sprzęt komputerowy, gadżety, RTV i AGD, artykuły fotograficzne oraz wiele innych praktycznych i oryginalnych produktów. Towary sprowadzamy głównie z rynków azjatyckich, w szczególności z Chin, dzięki czemu jesteśmy w stanie zapewnić naszym klientom konkurencyjne ceny.",
                 desc2: "Jesteśmy zlokalizowani w Polsce co pozwala nam utrzymywać krótkie terminy dostaw, co przekłada się na szybkie terminy realizacji zamówień. W przeciwieństwie do wielu innych hurtowni, które sprowadzają niewielkie partie towarów w wyższych cenach, my możemy zaoferować atrakcyjniejsze warunki zakupu dzięki bezpośredniemu importowi i długoletnim relacjom z producentami.",
@@ -161,7 +160,6 @@
                 copyright: "&copy; 2025 Prime Distribution Group. Wszelkie prawa zastrzeżone."
             },
             en: {
-                title: "Prime Distribution Group",
                 aboutTitle: "About Us",
                 desc1: "Prime Distribution Group is a modern online wholesale store with an extremely wide range of products. Our offer includes, among others, electronic accessories, computer equipment, gadgets, RTV and AGD, photographic articles, and many other practical and original products. We import goods mainly from Asian markets, particularly from China, which allows us to provide our customers with competitive prices.",
                 desc2: "We are located in Poland, which allows us to maintain short delivery times, translating into fast order fulfillment times. Unlike many other wholesalers who import small batches of goods at higher prices, we can offer more attractive purchase conditions thanks to direct import and long-term relationships with manufacturers.",
@@ -194,7 +192,6 @@
                 copyright: "&copy; 2025 Prime Distribution Group. All rights reserved."
             },
             de: {
-                title: "Prime Distribution Group",
                 aboutTitle: "Über uns",
                 desc1: "Prime Distribution Group ist ein modernes Online-Großhandelsgeschäft mit einer extrem breiten Palette an Produkten. Unser Angebot umfasst unter anderem elektronisches Zubehör, Computergeräte, Gadgets, RTV und AGD, fotografische Artikel sowie viele andere praktische und originelle Produkte. Wir importieren Waren hauptsächlich von asiatischen Märkten, insbesondere aus China, was uns ermöglicht, unseren Kunden wettbewerbsfähige Preise anzubieten.",
                 desc2: "Wir sind in Polen ansässig, was uns ermöglicht, kurze Lieferzeiten einzuhalten, was sich in schnellen Auftragsabwicklungszeiten niederschlägt. Im Gegensatz zu vielen anderen Großhändlern, die kleine Mengen an Waren zu höheren Preisen importieren, können wir attraktivere Einkaufsbedingungen bieten dank direktem Import und langjährigen Beziehungen zu Herstellern.",
@@ -227,7 +224,6 @@
                 copyright: "&copy; 2025 Prime Distribution Group. Alle Rechte vorbehalten."
             },
             zh: {
-                title: "Prime Distribution Group",
                 aboutTitle: "关于我们",
                 desc1: "Prime Distribution Group 是一家现代化的在线批发商店，拥有极其广泛的产品选择。我们的产品包括电子配件、计算机设备、小工具、RTV 和 AGD、摄影用品以及许多其他实用和原创产品。我们主要从亚洲市场进口商品，特别是从中国，这使我们能够为客户提供具有竞争力的价格。",
                 desc2: "我们位于波兰，这使我们能够保持较短的交货时间，从而实现快速的订单履行时间。与许多其他批发商不同，他们以更高的价格进口小批量商品，我们可以通过直接进口和与制造商的长期关系提供更具吸引力的购买条件。",
@@ -260,17 +256,14 @@
                 copyright: "&copy; 2025 Prime Distribution Group。保留所有权利。"
             }
         };
-
         function changeLanguage(lang) {
             localStorage.setItem('lang', lang);
             location.reload();
         }
-
         window.onload = function() {
             const lang = localStorage.getItem('lang') || 'pl';
             document.getElementById('lang-selector').value = lang;
             const texts = translations[lang];
-            document.getElementById('title').innerText = texts.title;
             document.getElementById('about-title').innerText = texts.aboutTitle;
             document.getElementById('desc1').innerText = texts.desc1;
             document.getElementById('desc2').innerText = texts.desc2;
