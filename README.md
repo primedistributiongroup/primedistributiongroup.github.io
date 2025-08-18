@@ -21,7 +21,7 @@
             position: relative;
         }
         header img {
-            max-width: 900px;
+            max-width: 40%;
             height: auto;
         }
         #lang-selector {
