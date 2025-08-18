@@ -14,7 +14,7 @@
             line-height: 1.6;
         }
         header {
-            background-color: ##0051a5;
+            background-color: #0051a5;
             color: white;
             text-align: center;
             padding: 20px;
@@ -40,7 +40,7 @@
             margin-bottom: 40px;
         }
         h1, h2 {
-            color: ##0051a5;
+            color: #0051a5;
         }
         #title {
             color: white;
@@ -48,7 +48,7 @@
         footer {
             text-align: center;
             padding: 10px;
-            background-color: ##0051a5;
+            background-color: #0051a5;
             color: white;
         }
         .contact-info {
