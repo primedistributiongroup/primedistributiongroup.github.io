@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Distribution Group</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -20,7 +21,7 @@
             position: relative;
         }
         header img {
-            max-width: 40%;
+            max-width: 300px;
             height: auto;
         }
         #lang-selector {
@@ -40,9 +41,6 @@
         }
         h1, h2 {
             color: #001f3f;
-        }
-        #title {
-            color: white;
         }
         footer {
             text-align: center;
@@ -115,7 +113,39 @@
             <h2 id="payment-title"></h2>
             <p id="payment-desc"></p>
         </section>
-        <img src="containers.jpg" alt="Shipping containers and airplane" class="banner-image">
+        <section id="payment-guarantees">
+            <h2 id="guarantees-title"></h2>
+            <h3 id="guarantees-desc-title"></h3>
+            <p id="guarantees-desc"></p>
+            <h3 id="escrow-title"></h3>
+            <p id="escrow-desc"></p>
+            <h3 id="additional-sec-title"></h3>
+            <p id="additional-sec-desc"></p>
+            <h3 id="benefits-suppliers-title"></h3>
+            <ul>
+                <li id="benefit-sup1"></li>
+                <li id="benefit-sup2"></li>
+                <li id="benefit-sup3"></li>
+                <li id="benefit-sup4"></li>
+            </ul>
+        </section>
+        <section id="ce-certificates">
+            <h2 id="certificates-title"></h2>
+            <p id="certificates-desc"></p>
+            <h3 id="cert-support-title"></h3>
+            <ul>
+                <li id="cert-support1"></li>
+                <li id="cert-support2"></li>
+            </ul>
+            <h3 id="cert-benefits-title"></h3>
+            <ul>
+                <li id="cert-benefit1"></li>
+                <li id="cert-benefit2"></li>
+                <li id="cert-benefit3"></li>
+                <li id="cert-benefit4"></li>
+            </ul>
+        </section>
+        <img src="containers_airplane.png" alt="Shipping containers and airplane" class="banner-image">
     </main>
     <footer>
         <div class="contact-info">
@@ -128,13 +158,14 @@
     <script>
         const translations = {
             pl: {
+                title: "Prime Distribution Group",
                 aboutTitle: "O nas",
                 desc1: "Prime Distribution Group to nowoczesna hurtownia internetowa o niezwykle szerokim wyborze asortymentu. W naszej ofercie znajdują się m.in. akcesoria elektroniczne, sprzęt komputerowy, gadżety, RTV i AGD, artykuły fotograficzne oraz wiele innych praktycznych i oryginalnych produktów. Towary sprowadzamy głównie z rynków azjatyckich, w szczególności z Chin, dzięki czemu jesteśmy w stanie zapewnić naszym klientom konkurencyjne ceny.",
                 desc2: "Jesteśmy zlokalizowani w Polsce co pozwala nam utrzymywać krótkie terminy dostaw, co przekłada się na szybkie terminy realizacji zamówień. W przeciwieństwie do wielu innych hurtowni, które sprowadzają niewielkie partie towarów w wyższych cenach, my możemy zaoferować atrakcyjniejsze warunki zakupu dzięki bezpośredniemu importowi i długoletnim relacjom z producentami.",
                 desc3: "Wieloletnie doświadczenie, rozbudowana sieć kontaktów oraz sprawdzony model współpracy z fabrykami zagranicznymi sprawiają, że nasza hurtownia zapewnia wyjątkowo korzystny stosunek ceny do jakości. Dzięki nam zyskują Państwo wygodny dostęp do szerokiego wachlarza artykułów w jednym miejscu – bez potrzeby przeszukiwania wielu różnych sklepów. Prime Distribution Group to jedno z najlepiej zaopatrzonych centrów dystrybucji on-line, oferujące towar w cenach hurtowych, dostępny od ręki.",
                 importTitle: "Import produktów z Chin – Prime Distribution Group",
                 import1: "Od wielu lat specjalizujemy się w sprowadzaniu towarów z Chin, co pozwala nam oferować naszym partnerom biznesowym szeroki wybór produktów w atrakcyjnych cenach. Regularnie monitorujemy trendy konsumenckie w Polsce i na bieżąco dostosowujemy nasz asortyment, aby odpowiadał aktualnym potrzebom rynku. Każda nowa dostawa to okazja do wzbogacenia oferty o ciekawe nowości.",
-                import2: "Aby maksymalnie ułatwić zakupy, nasza hurtownia internetowa została przejrzyście podzielona na kategorie tematyczne. Znajdą tu Państwo m.in.: elektronikę i akcesoria komputerowe, sprzęt do konsol i tabletów, produkty dla domu i ogrodu, akcesoria motoryzacyjne, oświetlenie, odzież, obuwie i biżuterię, artykuły sportowe i turystyczne, sprzęt multimedialny, gadżety, gry, instrumenty muzyczne, grillów i pieców oraz akcesoria z nimi związane. W ofercie nie brakuje również kategorii takich jak uroda, zdrowie, czy produkty dla zwierząt.",
+                desc1: "Aby maksymalnie ułatwić zakupy, nasza hurtownia internetowa została przejrzyście podzielona na kategorie tematyczne. Znajdą tu Państwo m.in.: elektronikę i akcesoria komputerowe, sprzęt do konsol i tabletów, produkty dla domu i ogrodu, akcesoria motoryzacyjne, oświetlenie, odzież, obuwie i biżuterię, artykuły sportowe i turystyczne, sprzęt multimedialny, gadżety, gry, instrumenty muzyczne, grillów i pieców oraz akcesoria z nimi związane. W ofercie nie brakuje również kategorii takich jak uroda, zdrowie, czy produkty dla zwierząt.",
                 import3: "Dodatkowo przygotowaliśmy zakładki Nowości, Bestsellery oraz Promocje, aby szybciej dotrzeć do najciekawszych propozycji. Każdy artykuł opatrzony jest szczegółowym opisem, zdjęciami, informacjami o cenie oraz dostępności. Proces zakupowy został zaprojektowany w taki sposób, aby był szybki, wygodny i intuicyjny – wystarczy dodać wybrane produkty do koszyka i sfinalizować zamówienie kilkoma kliknięciami.",
                 import4: "Oferujemy także możliwość porównywania i obserwowania interesujących Państwa towarów, co ułatwia podejmowanie decyzji zakupowych. W przypadku dodatkowych pytań, nasz zespół pozostaje do dyspozycji i chętnie udzieli niezbędnych informacji.",
                 import5: "Współpraca z nami to gwarancja, że Państwa oferta handlowa stanie się bardziej atrakcyjna, a konkurencyjne ceny pozytywnie zaskoczą klientów.",
@@ -154,12 +185,35 @@
                 scaleBenefit3: "Szybsze obroty dzięki stałym slotom i odprawie w UE.",
                 paymentTitle: "Metody Płatności",
                 paymentDesc: "W Prime Distribution Group dbamy o bezpieczeństwo oraz wygodę transakcji, oferując naszym partnerom biznesowym sprawdzone i bezpieczne metody płatności. Dla zapewnienia najwyższego poziomu ochrony zarówno dla kupujących, jak i sprzedających, korzystamy z usługi escrow. Escrow to zaufana forma zabezpieczenia płatności, która polega na tym, że środki są przechowywane przez niezależnego pośrednika do momentu spełnienia warunków transakcji. Dopiero po ich weryfikacji środki zostają przekazane sprzedającemu, co zapewnia obie strony, że transakcja zostanie zrealizowana zgodnie z umową. Dzięki temu minimalizujemy ryzyko zarówno dla kupujących, jak i sprzedających, co jest szczególnie istotne w przypadku międzynarodowych transakcji. W przypadku jakichkolwiek pytań dotyczących metod płatności lub szczegółów współpracy, nasz zespół jest do Państwa dyspozycji, gotowy udzielić wszelkich niezbędnych informacji.",
+                guaranteesTitle: "Gwarancje Płatności",
+                guaranteesDescTitle: "Bezpieczne i przejrzyste rozliczenia",
+                guaranteesDesc: "W Prime Distribution Group kładziemy ogromny nacisk na bezpieczeństwo i terminowość płatności wobec naszych dostawców. Wiemy, że dla chińskich producentów kluczowe jest posiadanie stabilnego i zaufanego partnera biznesowego, dlatego korzystamy wyłącznie ze sprawdzonych form zabezpieczenia transakcji.",
+                escrowTitle: "Escrow via Alibaba Trade Assurance",
+                escrowDesc: "Wszystkie nasze transakcje możemy zabezpieczyć poprzez Alibaba Trade Assurance – globalnie uznaną usługę escrow, gwarantującą ochronę zarówno kupującego, jak i sprzedającego. Środki są przechowywane przez zaufanego pośrednika co zapewnia sprzedawców, że otrzymają płatność terminowo i w pełnej kwocie, bez ryzyka opóźnień czy nieuczciwych praktyk.",
+                additionalSecTitle: "Dodatkowe zabezpieczenia",
+                additionalSecDesc: "W ramach Trade Assurance gwarantujemy pokrycie do 10% w przypadku jakichkolwiek problemów związanych z płatnościami. Dzięki temu ryzyko dla dostawców jest zminimalizowane, a każda transakcja staje się w pełni transparentna i przewidywalna.",
+                benefitsSuppliersTitle: "Korzyści dla chińskich dostawców",
+                benefitSup1: "Gwarancja, że pieniądze są bezpieczne i wypłacane w ustalonym terminie.",
+                benefitSup2: "Redukcja ryzyka braku zapłaty lub opóźnień.",
+                benefitSup3: "Współpraca z wiarygodnym europejskim partnerem, który działa zgodnie z międzynarodowymi standardami handlu.",
+                benefitSup4: "Możliwość budowania długoterminowej i stabilnej relacji biznesowej z importerem o dużej skali działania w Unii Europejskiej.",
+                certificatesTitle: "Certyfikaty CE/UE",
+                certificatesDesc: "Dostęp do rynku Unii Europejskiej bez barier. Jednym z największych wyzwań dla chińskich producentów jest spełnienie wymagań prawnych i jakościowych obowiązujących w Unii Europejskiej. Prime Distribution Group oferuje swoim partnerom pełne wsparcie w tym zakresie, dzięki czemu dostawcy z Chin mogą łatwo i bezpiecznie wprowadzać swoje produkty na rynek UE.",
+                certSupportTitle: "Wsparcie w certyfikacji",
+                certSupport1: "Pomagamy w procesie przygotowania dokumentacji, oznakowania produktów oraz weryfikacji niezbędnych certyfikatów CE, RoHS oraz innymi wymogami UE.",
+                certSupport2: "Dzięki temu dostawcy otrzymują gwarancję, że ich towary są zgodne z wymaganiami prawnymi obowiązującymi w Europie.",
+                certBenefitsTitle: "Korzyści dla chińskich dostawców",
+                certBenefit1: "Łatwiejszy dostęp do rynku UE, bez konieczności samodzielnego organizowania złożonych procedur certyfikacyjnych.",
+                certBenefit2: "Wyższa atrakcyjność produktów dla europejskich odbiorców, którzy wymagają zgodności z przepisami.",
+                certBenefit3: "Zwiększone zaufanie kupujących dzięki profesjonalnemu oznaczeniu towarów i gwarancji jakości.",
+                certBenefit4: "Redukcja ryzyka zatrzymania towaru na granicy lub odmowy sprzedaży w UE.",
                 email: 'Email: <a href="mailto:primedistributiongrouppl@gmail.com">primedistributiongrouppl@gmail.com</a>',
                 instagram: 'Instagram: <a href="https://www.instagram.com/primedistributiongroup/">@primedistributiongroup</a>',
                 location: 'Siedziba: Polska',
                 copyright: "&copy; 2025 Prime Distribution Group. Wszelkie prawa zastrzeżone."
             },
             en: {
+                title: "Prime Distribution Group",
                 aboutTitle: "About Us",
                 desc1: "Prime Distribution Group is a modern online wholesale store with an extremely wide range of products. Our offer includes, among others, electronic accessories, computer equipment, gadgets, RTV and AGD, photographic articles, and many other practical and original products. We import goods mainly from Asian markets, particularly from China, which allows us to provide our customers with competitive prices.",
                 desc2: "We are located in Poland, which allows us to maintain short delivery times, translating into fast order fulfillment times. Unlike many other wholesalers who import small batches of goods at higher prices, we can offer more attractive purchase conditions thanks to direct import and long-term relationships with manufacturers.",
@@ -186,12 +240,35 @@
                 scaleBenefit3: "Faster turnovers thanks to fixed slots and clearance in EU.",
                 paymentTitle: "Payment Methods",
                 paymentDesc: "At Prime Distribution Group, we prioritize the security and convenience of transactions, offering our business partners proven and safe payment methods. To ensure the highest level of protection for both buyers and sellers, we use escrow services. Escrow is a trusted form of payment security where funds are held by an independent intermediary until the transaction conditions are met. Only after verification are the funds released to the seller, ensuring both parties that the transaction will be completed as agreed. This minimizes risk for both buyers and sellers, which is particularly important in international transactions. If you have any questions regarding payment methods or cooperation details, our team is at your disposal, ready to provide all necessary information.",
+                guaranteesTitle: "Payment Guarantees",
+                guaranteesDescTitle: "Safe and transparent settlements",
+                guaranteesDesc: "At Prime Distribution Group, we place great emphasis on the security and timeliness of payments to our suppliers. We know that for Chinese manufacturers, having a stable and trusted business partner is key, so we use only proven forms of transaction security.",
+                escrowTitle: "Escrow via Alibaba Trade Assurance",
+                escrowDesc: "All our transactions can be secured through Alibaba Trade Assurance – a globally recognized escrow service, guaranteeing protection for both buyer and seller. Funds are held by a trusted intermediary, ensuring sellers that they will receive payment on time and in full, without the risk of delays or unfair practices.",
+                additionalSecTitle: "Additional securities",
+                additionalSecDesc: "As part of Trade Assurance, we guarantee coverage up to 10% in case of any payment-related problems. This minimizes risk for suppliers, making every transaction fully transparent and predictable.",
+                benefitsSuppliersTitle: "Benefits for Chinese suppliers",
+                benefitSup1: "Guarantee that money is safe and paid on the agreed date.",
+                benefitSup2: "Reduction of risk of non-payment or delays.",
+                benefitSup3: "Cooperation with a credible European partner who operates in accordance with international trade standards.",
+                benefitSup4: "Possibility to build long-term and stable business relationship with a large-scale importer in the European Union.",
+                certificatesTitle: "CE/EU Certificates",
+                certificatesDesc: "Access to the European Union market without barriers. One of the biggest challenges for Chinese manufacturers is meeting the legal and quality requirements in the European Union. Prime Distribution Group offers full support to its partners in this area, allowing Chinese suppliers to easily and safely introduce their products to the EU market.",
+                certSupportTitle: "Support in certification",
+                certSupport1: "We help in the process of preparing documentation, product labeling, and verification of necessary CE, RoHS certificates and other EU requirements.",
+                certSupport2: "Thanks to this, suppliers receive a guarantee that their goods comply with the legal requirements in Europe.",
+                certBenefitsTitle: "Benefits for Chinese suppliers",
+                certBenefit1: "Easier access to the EU market, without the need to independently organize complex certification procedures.",
+                certBenefit2: "Higher attractiveness of products for European recipients who require compliance with regulations.",
+                certBenefit3: "Increased trust of buyers thanks to professional product labeling and quality guarantee.",
+                certBenefit4: "Reduction of risk of goods detention at the border or refusal of sale in the EU.",
                 email: 'Email: <a href="mailto:primedistributiongrouppl@gmail.com">primedistributiongrouppl@gmail.com</a>',
                 instagram: 'Instagram: <a href="https://www.instagram.com/primedistributiongroup/">@primedistributiongroup</a>',
                 location: 'Location: Poland',
                 copyright: "&copy; 2025 Prime Distribution Group. All rights reserved."
             },
             de: {
+                title: "Prime Distribution Group",
                 aboutTitle: "Über uns",
                 desc1: "Prime Distribution Group ist ein modernes Online-Großhandelsgeschäft mit einer extrem breiten Palette an Produkten. Unser Angebot umfasst unter anderem elektronisches Zubehör, Computergeräte, Gadgets, RTV und AGD, fotografische Artikel sowie viele andere praktische und originelle Produkte. Wir importieren Waren hauptsächlich von asiatischen Märkten, insbesondere aus China, was uns ermöglicht, unseren Kunden wettbewerbsfähige Preise anzubieten.",
                 desc2: "Wir sind in Polen ansässig, was uns ermöglicht, kurze Lieferzeiten einzuhalten, was sich in schnellen Auftragsabwicklungszeiten niederschlägt. Im Gegensatz zu vielen anderen Großhändlern, die kleine Mengen an Waren zu höheren Preisen importieren, können wir attraktivere Einkaufsbedingungen bieten dank direktem Import und langjährigen Beziehungen zu Herstellern.",
@@ -218,12 +295,35 @@
                 scaleBenefit3: "Schnellere Umsätze dank fester Slots und Zollabfertigung in der EU.",
                 paymentTitle: "Zahlungsmethoden",
                 paymentDesc: "Bei Prime Distribution Group legen wir Wert auf die Sicherheit und Bequemlichkeit von Transaktionen und bieten unseren Geschäftspartnern bewährte und sichere Zahlungsmethoden an. Um den höchsten Schutz für Käufer und Verkäufer zu gewährleisten, nutzen wir den Escrow-Service. Escrow ist eine vertrauenswürdige Form der Zahlungssicherung, bei der die Mittel von einem unabhängigen Vermittler gehalten werden, bis die Transaktionsbedingungen erfüllt sind. Erst nach Überprüfung werden die Mittel an den Verkäufer freigegeben, was beide Parteien sicherstellt, dass die Transaktion vertragsgemäß abgeschlossen wird. Dadurch minimieren wir das Risiko für Käufer und Verkäufer, was besonders bei internationalen Transaktionen wichtig ist. Bei Fragen zu Zahlungsmethoden oder Kooperationsdetails steht unser Team zur Verfügung und gibt gerne alle notwendigen Informationen.",
+                guaranteesTitle: "Zahlungsgarantien",
+                guaranteesDescTitle: "Sichere und transparente Abrechnungen",
+                guaranteesDesc: "Bei Prime Distribution Group legen wir großen Wert auf die Sicherheit und Pünktlichkeit von Zahlungen an unsere Lieferanten. Wir wissen, dass für chinesische Hersteller ein stabiler und vertrauenswürdiger Geschäftspartner entscheidend ist, daher nutzen wir ausschließlich bewährte Formen der Transaktionssicherung.",
+                escrowTitle: "Escrow via Alibaba Trade Assurance",
+                escrowDesc: "Alle unsere Transaktionen können über Alibaba Trade Assurance gesichert werden – einen global anerkannten Escrow-Service, der Schutz für Käufer und Verkäufer garantiert. Die Mittel werden von einem vertrauenswürdigen Vermittler gehalten, was Verkäufern gewährleistet, dass sie die Zahlung pünktlich und in voller Höhe erhalten, ohne das Risiko von Verzögerungen oder unfairen Praktiken.",
+                additionalSecTitle: "Zusätzliche Sicherheiten",
+                additionalSecDesc: "Im Rahmen von Trade Assurance garantieren wir eine Abdeckung bis zu 10% im Falle von Zahlungsproblemen. Dadurch wird das Risiko für Lieferanten minimiert, und jede Transaktion wird vollständig transparent und vorhersehbar.",
+                benefitsSuppliersTitle: "Vorteile für chinesische Lieferanten",
+                benefitSup1: "Garantie, dass das Geld sicher und zum vereinbarten Termin ausgezahlt wird.",
+                benefitSup2: "Reduzierung des Risikos von Nichtzahlung oder Verzögerungen.",
+                benefitSup3: "Zusammenarbeit mit einem glaubwürdigen europäischen Partner, der nach internationalen Handelsstandards handelt.",
+                benefitSup4: "Möglichkeit, eine langfristige und stabile Geschäftsbeziehung mit einem Importeur großer Skala in der Europäischen Union aufzubauen.",
+                certificatesTitle: "CE/EU-Zertifikate",
+                certificatesDesc: "Zugang zum Markt der Europäischen Union ohne Barrieren. Eine der größten Herausforderungen für chinesische Hersteller ist die Erfüllung der rechtlichen und qualitativen Anforderungen in der Europäischen Union. Prime Distribution Group bietet seinen Partnern volle Unterstützung in diesem Bereich, sodass Lieferanten aus China ihre Produkte leicht und sicher auf dem EU-Markt einführen können.",
+                certSupportTitle: "Unterstützung bei der Zertifizierung",
+                certSupport1: "Wir helfen bei der Vorbereitung der Dokumentation, der Produktkennzeichnung und der Überprüfung notwendiger CE-, RoHS-Zertifikate und anderer EU-Anforderungen.",
+                certSupport2: "Dadurch erhalten Lieferanten die Garantie, dass ihre Waren den in Europa geltenden rechtlichen Anforderungen entsprechen.",
+                certBenefitsTitle: "Vorteile für chinesische Lieferanten",
+                certBenefit1: "Einfacherer Zugang zum EU-Markt, ohne die Notwendigkeit, komplexe Zertifizierungsverfahren selbst zu organisieren.",
+                certBenefit2: "Höhere Attraktivität der Produkte für europäische Empfänger, die die Einhaltung der Vorschriften verlangen.",
+                certBenefit3: "Erhöhtes Vertrauen der Käufer dank professioneller Produktkennzeichnung und Qualitätsgarantie.",
+                certBenefit4: "Reduzierung des Risikos, dass die Ware an der Grenze festgehalten oder der Verkauf in der EU verweigert wird.",
                 email: 'E-Mail: <a href="mailto:primedistributiongrouppl@gmail.com">primedistributiongrouppl@gmail.com</a>',
                 instagram: 'Instagram: <a href="https://www.instagram.com/primedistributiongroup/">@primedistributiongroup</a>',
                 location: 'Sitz: Polen',
                 copyright: "&copy; 2025 Prime Distribution Group. Alle Rechte vorbehalten."
             },
             zh: {
+                title: "Prime Distribution Group",
                 aboutTitle: "关于我们",
                 desc1: "Prime Distribution Group 是一家现代化的在线批发商店，拥有极其广泛的产品选择。我们的产品包括电子配件、计算机设备、小工具、RTV 和 AGD、摄影用品以及许多其他实用和原创产品。我们主要从亚洲市场进口商品，特别是从中国，这使我们能够为客户提供具有竞争力的价格。",
                 desc2: "我们位于波兰，这使我们能够保持较短的交货时间，从而实现快速的订单履行时间。与许多其他批发商不同，他们以更高的价格进口小批量商品，我们可以通过直接进口和与制造商的长期关系提供更具吸引力的购买条件。",
@@ -250,16 +350,40 @@
                 scaleBenefit3: "通过固定槽位和欧盟清关实现更快的周转。",
                 paymentTitle: "支付方式",
                 paymentDesc: "在 Prime Distribution Group，我们重视交易的安全性和便利性，为我们的商业伙伴提供经过验证的安全支付方式。为了确保买卖双方最高水平的保护，我们使用托管服务。托管是一种可信的支付保障形式，资金由独立中介持有，直到交易条件满足。只有在验证后，资金才释放给卖方，确保双方交易按约定完成。这最小化了买卖双方的风险，这在国际交易中尤为重要。如果您对支付方式或合作细节有任何疑问，我们的团队随时为您服务，愿意提供所有必要信息。",
+                guaranteesTitle: "支付保证",
+                guaranteesDescTitle: "安全和透明结算",
+                guaranteesDesc: "在 Prime Distribution Group，我们高度重视对供应商支付的安全性和及时性。我们知道对中国制造商来说，拥有稳定和可信的商业伙伴是关键，因此我们只使用经过验证的交易安全形式。",
+                escrowTitle: "通过Alibaba Trade Assurance的托管",
+                escrowDesc: "我们所有的交易都可以通过Alibaba Trade Assurance安全 – 一个全球认可的托管服务，保证买卖双方的保护。资金由可信中介持有，确保卖方及时和全额收到支付，而无延迟或不公平实践的风险。",
+                additionalSecTitle: "额外安全措施",
+                additionalSecDesc: "作为Trade Assurance的一部分，我们保证在任何支付相关问题的情况下覆盖高达10%。这最小化了供应商的风险，使每笔交易完全透明和可预测。",
+                benefitsSuppliersTitle: "对中国供应商的好处",
+                benefitSup1: "保证资金安全并按约定日期支付。",
+                benefitSup2: "减少未支付或延迟的风险。",
+                benefitSup3: "与遵守国际贸易标准的可靠欧洲伙伴合作。",
+                benefitSup4: "与欧盟大规模进口商建立长期稳定商业关系的可能性。",
+                certificatesTitle: "CE/欧盟证书",
+                certificatesDesc: "无障碍进入欧盟市场。中国制造商的最大挑战之一是满足欧盟的法律和质量要求。Prime Distribution Group为其伙伴提供全面支持，因此中国供应商可以轻松安全地将产品引入欧盟市场。",
+                certSupportTitle: "认证支持",
+                certSupport1: "我们帮助准备文档、产品标签和验证必要的CE、RoHS证书以及其他欧盟要求。",
+                certSupport2: "因此，供应商获得保证，他们的商品符合欧洲的法律要求。",
+                certBenefitsTitle: "对中国供应商的好处",
+                certBenefit1: "更容易进入欧盟市场，而无需独立组织复杂的认证程序。",
+                certBenefit2: "产品对要求遵守法规的欧洲接收者的更高吸引力。",
+                certBenefit3: "通过专业产品标签和质量保证增加买家的信任。",
+                certBenefit4: "减少边境扣押货物或欧盟拒绝销售的风险。",
                 email: '电子邮件: <a href="mailto:primedistributiongrouppl@gmail.com">primedistributiongrouppl@gmail.com</a>',
                 instagram: 'Instagram: <a href="https://www.instagram.com/primedistributiongroup/">@primedistributiongroup</a>',
                 location: '位置: 波兰',
                 copyright: "&copy; 2025 Prime Distribution Group。保留所有权利。"
             }
         };
+
         function changeLanguage(lang) {
             localStorage.setItem('lang', lang);
             location.reload();
         }
+
         window.onload = function() {
             const lang = localStorage.getItem('lang') || 'pl';
             document.getElementById('lang-selector').value = lang;
@@ -290,6 +414,54 @@
             document.getElementById('scale-benefit3').innerText = texts.scaleBenefit3;
             document.getElementById('payment-title').innerText = texts.paymentTitle;
             document.getElementById('payment-desc').innerText = texts.paymentDesc;
+            document.getElementById('guarantees-title').innerText = texts.guaranteesTitle;
+            document.getElementById('guarantees-desc-title').innerText = texts.guaranteesDescTitle;
+            document.getElementById('guarantees-desc').innerText = texts.guaranteesDesc;
+            document.getElementById('escrow-title').innerText = texts.escrowTitle;
+            document.getElementById('escrow-desc').innerText = texts.escrowDesc;
+            document.getElementById('additional-sec-title').innerText = texts.additionalSecTitle;
+            document.getElementById('additional-sec-desc').innerText = texts.additionalSecDesc;
+            document.getElementById('benefits-suppliers-title').innerText = texts.benefitsSuppliersTitle;
+            document.getElementById('benefit-sup1').innerText = texts.benefitSup1;
+            document.getElementById('benefit-sup2').innerText = texts.benefitSup2;
+            document.getElementById('benefit-sup3').innerText = texts.benefitSup3;
+            document.getElementById('benefit-sup4').innerText = texts.benefitSup4;
+            document.getElementById('certificates-title').innerText = texts.certificatesTitle;
+            document.getElementById('certificates-desc').innerText = texts.certificatesDesc;
+            document.getElementById('cert-support-title').innerText = texts.certSupportTitle;
+            document.getElementById('cert-support1').innerText = texts.certSupport1;
+            document.getElementById('cert-support2').innerText = texts.certSupport2;
+            document.getElementById('cert-benefits-title').innerText = texts.certBenefitsTitle;
+            document.getElementById('cert-benefit1').innerText = texts.certBenefit1;
+            document.getElementById('cert-benefit2').innerText = texts.certBenefit2;
+            document.getElementById('cert-benefit3').innerText = texts.certBenefit3;
+            document.getElementById('cert-benefit4').innerText = texts.certBenefit4;
+            document.getElementById('email').innerHTML = texts.email;
+            document.getElementById('instagram').innerHTML = texts.instagram;
+            document.getElementById('location').innerHTML = texts.location;
+            document.getElementById('copyright').innerHTML = texts.copyright;
+            document.getElementById('guarantees-title').innerText = texts.guaranteesTitle;
+            document.getElementById('guarantees-desc-title').innerText = texts.guaranteesDescTitle;
+            document.getElementById('guarantees-desc').innerText = texts.guaranteesDesc;
+            document.getElementById('escrow-title').innerText = texts.escrowTitle;
+            document.getElementById('escrow-desc').innerText = texts.escrowDesc;
+            document.getElementById('additional-sec-title').innerText = texts.additionalSecTitle;
+            document.getElementById('additional-sec-desc').innerText = texts.additionalSecDesc;
+            document.getElementById('benefits-suppliers-title').innerText = texts.benefitsSuppliersTitle;
+            document.getElementById('benefit-sup1').innerText = texts.benefitSup1;
+            document.getElementById('benefit-sup2').innerText = texts.benefitSup2;
+            document.getElementById('benefit-sup3').innerText = texts.benefitSup3;
+            document.getElementById('benefit-sup4').innerText = texts.benefitSup4;
+            document.getElementById('certificates-title').innerText = texts.certificatesTitle;
+            document.getElementById('certificates-desc').innerText = texts.certificatesDesc;
+            document.getElementById('cert-support-title').innerText = texts.certSupportTitle;
+            document.getElementById('cert-support1').innerText = texts.certSupport1;
+            document.getElementById('cert-support2').innerText = texts.certSupport2;
+            document.getElementById('cert-benefits-title').innerText = texts.certBenefitsTitle;
+            document.getElementById('cert-benefit1').innerText = texts.certBenefit1;
+            document.getElementById('cert-benefit2').innerText = texts.certBenefit2;
+            document.getElementById('cert-benefit3').innerText = texts.certBenefit3;
+            document.getElementById('cert-benefit4').innerText = texts.certBenefit4;
             document.getElementById('email').innerHTML = texts.email;
             document.getElementById('instagram').innerHTML = texts.instagram;
             document.getElementById('location').innerHTML = texts.location;
