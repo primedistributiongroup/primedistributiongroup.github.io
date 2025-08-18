@@ -131,7 +131,7 @@
         const translations = {
             pl: {
                 title: "Prime Distribution Group",
-                aboutTitle: " nas",
+                aboutTitle: "O nas",
                 desc1: "Prime Distribution Group to nowoczesna hurtownia internetowa o niezwykle szerokim wyborze asortymentu. W naszej ofercie znajdują się m.in. akcesoria elektroniczne, sprzęt komputerowy, gadżety, RTV i AGD, artykuły fotograficzne oraz wiele innych praktycznych i oryginalnych produktów. Towary sprowadzamy głównie z rynków azjatyckich, w szczególności z Chin, dzięki czemu jesteśmy w stanie zapewnić naszym klientom konkurencyjne ceny.",
                 desc2: "Jesteśmy zlokalizowani w Polsce co pozwala nam utrzymywać krótkie terminy dostaw, co przekłada się na szybkie terminy realizacji zamówień. W przeciwieństwie do wielu innych hurtowni, które sprowadzają niewielkie partie towarów w wyższych cenach, my możemy zaoferować atrakcyjniejsze warunki zakupu dzięki bezpośredniemu importowi i długoletnim relacjom z producentami.",
                 desc3: "Wieloletnie doświadczenie, rozbudowana sieć kontaktów oraz sprawdzony model współpracy z fabrykami zagranicznymi sprawiają, że nasza hurtownia zapewnia wyjątkowo korzystny stosunek ceny do jakości. Dzięki nam zyskują Państwo wygodny dostęp do szerokiego wachlarza artykułów w jednym miejscu – bez potrzeby przeszukiwania wielu różnych sklepów. Prime Distribution Group to jedno z najlepiej zaopatrzonych centrów dystrybucji on-line, oferujące towar w cenach hurtowych, dostępny od ręki.",
