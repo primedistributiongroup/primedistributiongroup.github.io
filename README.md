@@ -67,7 +67,6 @@
 <body>
     <header>
         <img src="logo.png" alt="Prime Distribution Group">
-        <h1 id="title">Prime Distribution Group</h1>
         <select id="lang-selector" onchange="changeLanguage(this.value)">
             <option value="pl">Polski</option>
             <option value="en">English</option>
