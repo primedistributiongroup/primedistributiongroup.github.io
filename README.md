@@ -145,7 +145,7 @@
                 <li id="cert-benefit4"></li>
             </ul>
         </section>
-        <img src="containers_airplane.png" alt="Shipping containers and airplane" class="banner-image">
+        <img src="containers.jpg" alt="Shipping containers and airplane" class="banner-image">
     </main>
     <footer>
         <div class="contact-info">
